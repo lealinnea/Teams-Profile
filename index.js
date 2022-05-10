@@ -7,18 +7,19 @@ const Manager = require('./lib/managerClass')
 let newEmployee = [];
 let engineers = [];
 let interns = [];
+const teamArry = [];
 
 const QuestForMan = [
     {
         type: "input",
-        name: "Name",
+        name: "managerName",
         message: "Manager Name"
     },
 
 
     {
         type: "input",
-        name: "ID",
+        name: "managerID",
         message: "Manager ID"
     },
 
@@ -37,7 +38,7 @@ const QuestForMan = [
 
     {
         type: "list",
-        name: "Add Manager",
+        name: "addManager",
         message: "Would you like to add Manager?",
         choices: ['yes', 'no'],
     },
@@ -66,13 +67,19 @@ const QuestForEG = [
 
     {
         type:"input",
-        name: "phoneNumber",
+        name: "github",
+        message: "Engineer's Github Name?"
+    },
+
+    {
+        type:"input",
+        name: "officeNumber",
         message: "Manager Phone Number"
     },
 
     {
         type:"list",
-        name: "Add Engineer",
+        name: "addEngineer",
         message: "Would you like to add Engineer?",
         choices: ['yes', 'no']
     },
@@ -101,13 +108,13 @@ const QuestForIntern = [
 
     {
         type:"input",
-        name: "School",
+        name: "school",
         message: "Enter Interns School?"
     },
 
     {
         type:"list",
-        name: "Add Intern",
+        name: "addIntern",
         message: "Would you like to add Intern?",
         choices: ['yes', 'no']
     },
