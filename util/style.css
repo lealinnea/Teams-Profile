@@ -1,0 +1,78 @@
+/* ====Universal Style==== */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* =====Fonts and Styles====*/
+  
+  h1 {
+    font-size: 3em;
+   
+  }
+  h2 {
+    font-weight: 200;
+  }
+  h3 {
+    font-size: 1.2em;
+    font-weight: 200;
+  }
+  h4 {
+    font-size: 1em;
+  }
+  h5 {
+    font-weight: 400;
+  }
+  h6 {
+    font-weight: 200;
+    font-size: 0.6em;
+  }
+  p {
+    font-weight: 200;
+  }
+  li {
+    font-weight: 200;
+  }
+  /*===========*/
+nav h1{
+  margin: 0;
+}
+
+  /* cards */
+  
+  .card {
+      display: flex;
+      width: 230px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 1em;
+  }
+  
+  @media only screen and (max-width: 600px) {
+  .card {
+      flex-direction: column;
+      width: 100%;
+  }}
+.card .card-content{
+  padding: 0px;
+}
+  .card-content {  
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px;
+    color: white;
+  }
+
+  .valign-wrapper {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+  }
+  
