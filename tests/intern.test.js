@@ -1,17 +1,21 @@
-const intern = require('../lib/intern');
+const Intern = require('../lib/Intern');
 
-describe('intern', () =>{
-    describe('getSchool', () =>{
-        it(`should send interns school`, () => {
-            const newEmployee = new intern('name', '1', 'name.email', 'Ohio State University');
-            expect(newEmployee.getSchool()).toBe("Person is going to Ohio State University")
+
+    describe('Intern', () => {
+
+        it(`should return the school of an Intern`, () => {
+            const school = "Ohio State University";
+            const userSchool = new Intern("Lea", 123456, "lea@email.com", school);
+            expect(userSchool.getSchool()).toBe(school);
         });
     });
-        describe('getEmpRoll', () =>{
-            it(`should send employees roll`, () => {
-                const newEmployee = new intern('name', '1', 'name.email');
-                expect(newEmployee.getRoll()).toBe(`Roll: Intern`)
-            });
+    
+    // test case to return the role function
+    describe('Intern', () => {
+    
+        it(`should return the role of the Intern by calling the getRole function`, () => {
+            const role = "Intern";
+            const userRole = new Intern("Lea", 123456, "lea@email.com", "Lea131", role);
+            expect(userRole.getRole()).toBe(role);
         });
-
     });

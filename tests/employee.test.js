@@ -1,33 +1,67 @@
-const employee = require('../lib/employee');
+const Employee = require('../lib/Employee');
 
-describe('employee', () =>{
-    describe('getName', () =>{
-        it(`should send employees name`, () => {
-            const newEmployee = new employee('name', '1', 'name.email');
-            expect(newEmployee.getName()).toBe("Employee's Name: Name")
-        });
+
+describe('Employee', () => {
+
+    it(`should return the name of the employee`, () => {
+        const name = "Lea";
+        const person = new Employee(name);
+        expect(person).toBe(name);
     });
-    describe('geID', () =>{
-            it(`should send employees ID`, () => {
-                const newEmployee = new employee('name', '1', 'name.email');
-                expect(newEmployee.getID()).toBe("Employee's ID: 1")
-            });
-        });
-    
-        describe('getEmail', () =>{
-            it(`should send employees email`, () => {
-                const newEmployee = new employee('name', '1', 'name.email');
-    
-                expect(newEmployee.getEmail()).toBe(`Employee's Email Address: name.email`)
-            });
-        });
+});
+describe('Employee', () => {
+    it(`should return an employees ID`, () => {
+        const id = 123456;
+        const numberID = new Employee("Lea", id);
+        expect(numberID).toBe(id);
 
-        describe('getRoll', () =>{
-            it(`should send employees roll`, () => {
-                const newEmployee = new employee('name', '1', 'name.email');
-    
-                expect(newEmployee.getRoll()).toBe(`Employee's Roll: Roll`)
-            });
-        });
+    });
+});
 
-    })
+describe('Employee', () => {
+    it(`should return an employees email`, () => {
+        const email = "lea@email.com";
+        const emailID = new Employee("Lea", 123456, email);
+        expect(emailID).toBe(email);
+
+    });
+});
+
+
+
+describe('Employee', () => {
+
+    it(`should return the name of the employee by calling getName function`, () => {
+        const name = "Lea";
+        const person = new Employee(name);
+        expect(person.getName()).toBe(name);
+    });
+});
+describe('Employee', () => {
+    it(`should return an employees ID  by calling getID function`, () => {
+        const id = 123456;
+        const numberID = new Employee("Lea", id);
+        expect(numberID.getId()).toBe(id);
+
+    });
+});
+
+describe('Employee', () => {
+    it(`should return an employees email  by calling getEmail function`, () => {
+        const email = "lea@email.com";
+        const emailID = new Employee("Lea", 123456, email);
+        expect(emailID.getEmail()).toBe(email);
+
+    });
+});
+
+describe('Employee', () => {
+    it(`should return an employees role by calling getRole function`, () => {
+        const role = "Employee";
+        const position = new Employee("Lea", 123456, "lea@email.com", role);
+        expect(position.getRole()).toBe(role);
+
+    });
+});
+
+
