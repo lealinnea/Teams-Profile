@@ -6,14 +6,14 @@ describe('Employee', () => {
     it(`should return the name of the employee`, () => {
         const name = "Lea";
         const person = new Employee(name);
-        expect(person).toBe(name);
+        expect(person.name).toBe(name);
     });
 });
 describe('Employee', () => {
     it(`should return an employees ID`, () => {
         const id = 123456;
         const numberID = new Employee("Lea", id);
-        expect(numberID).toBe(id);
+        expect(numberID.id).toBe(id);
 
     });
 });
@@ -22,7 +22,7 @@ describe('Employee', () => {
     it(`should return an employees email`, () => {
         const email = "lea@email.com";
         const emailID = new Employee("Lea", 123456, email);
-        expect(emailID).toBe(email);
+        expect(emailID.email).toBe(email);
 
     });
 });

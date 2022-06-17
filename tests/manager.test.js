@@ -1,11 +1,11 @@
 const Manager = require('../lib/Manager');
 
-    describe('Manger', () => {
+    describe('Manager', () => {
 
         it(`should return the office number`, () => {
-            const officeNumber = 8675309;
-            const officeManager = new Manager("Lea", 123456, "lea@email.com", officeNumber);
-            expect(officeManager.getOfficeNumber()).toBe(officeNumber);
+            const number = 8675309;
+            const officeManager = new Manager("Lea", 123456, "lea@email.com", number);
+            expect(officeManager.getOfficeNumber()).toBe(number);
         });
     });
     
