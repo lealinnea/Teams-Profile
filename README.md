@@ -12,5 +12,6 @@ The objective of this project is to build a Node.js command-line application tha
 
 ### Link to google drive video
 https://drive.google.com/file/d/12NTcwxm2mg7zuTGtlOBt4zgRaA2B-qUy/view?usp=sharing
+https://drive.google.com/file/d/1L_01FL4rghubd2yYt-_K3RFz99hgXf7Y/view?usp=sharing
 
 
